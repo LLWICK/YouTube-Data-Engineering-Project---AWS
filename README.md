@@ -5,38 +5,38 @@ The pipeline ingests YouTube trending data, processes it using AWS services, and
 
  Data Source
 
-YouTube Trending Videos Dataset (Kaggle)
+YouTube Trending Videos Dataset (Kaggle) - https://www.kaggle.com/datasets/datasnaek/youtube-new
 
 Batch data used to simulate real-world analytics workloads
 
  Architecture
 Kaggle Data
-   ↓
+   ->
 Amazon S3 (Raw / Landing)
-   ↓
+   ->
 AWS Glue ETL
-   ↓
+   ->
 Amazon S3 (Cleansed)
-   ↓
+   ->
 Amazon S3 (Analytics)
-   ↓
+   ->
 Amazon Athena
-   ↓
+   ->
 Power BI Dashboard
 
  Pipeline Highlights
 
-Built a layered AWS data lake using Amazon S3
+1. Built a layered AWS data lake using Amazon S3
 
-Implemented ETL pipelines with AWS Glue
+2. Implemented ETL pipelines with AWS Glue
 
-Managed metadata using Glue Data Catalog
+3. Managed metadata using Glue Data Catalog
 
-Orchestrated workflows with AWS Step Functions & Lambda
+4. Orchestrated workflows with AWS Step Functions & Lambda
 
-Enabled serverless querying using Amazon Athena
+5. Enabled serverless querying using Amazon Athena
 
-Created an interactive Power BI dashboard for insights
+6. Created an interactive Power BI dashboard for insights
 
  Dashboard Insights
 
@@ -49,5 +49,10 @@ Regional and time-based trends
  Tech Stack
 
 AWS S3, Glue, Glue Data Catalog, Lambda, Step Functions, Athena, Power BI, Python, SQL
+
+architecture diagram 
+
+<img width="949" height="711" alt="architectura Diagram_3" src="https://github.com/user-attachments/assets/c129c432-6736-494d-aeea-d8ea4646cecd" />
+
 
 
